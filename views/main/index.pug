@@ -1,0 +1,22 @@
+head
+    include compara/head.pug
+body(id="bg-gradient-dark")
+    div(id="wrapper")
+        include compara/sidebar.pug
+        div(id="content-wrapper" class="d-flex flex-column")
+            div(id="content")
+                include compara/topbar.pug
+                div(class='container-fluid')
+                    div(class="row")
+                        div(class="card")
+                            div(class="card-header")
+                                h3 Select Link to go
+                            div(class="card-body")
+                                a(class="btn btn-success mr-2" href="https://www.naver.com") NAVER
+                                a(class="btn btn-danger mr-2" href="https://www.youtube.com") Youtube
+                                a(class="btn btn-primary mr-2" href="https://www.google.com") google
+            script(src="https://cdn.jsdelivr.net/npm/chart.js")
+            script(src="/chartjs/index_chart.js")
+            //- script(src="/chartjs/index_chart2.js")
+            include compara/footer.pug
+    include compara/footer_script.pug
